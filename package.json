@@ -1,0 +1,57 @@
+{
+	"name": "mvvm-folder-generate",
+	"displayName": "MVVM Folder Generate",
+	"description": "images/icon.png",
+	"publisher": "Anıl Sorgit",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.64.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:mvvm-folder-generate.mvvmFolderGenerate",
+		"onCommand:mvvm-folder-generate.mvvmFolderGenerateWithService"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "mvvm-folder-generate.mvvmFolderGenerate",
+				"title": "[PI] MVVM Folder Generate"
+			},
+			{
+				"command": "mvvm-folder-generate.mvvmFolderGenerateWithService",
+				"title": "[PI] MVVM Folder Generate With Service"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"group": "2_workspace",
+					"command": "mvvm-folder-generate.mvvmFolderGenerate"
+				},
+				{
+					"group": "2_workspace",
+					"command": "mvvm-folder-generate.mvvmFolderGenerateWithService"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.1.0",
+		"@types/node": "14.x",
+		"@types/vscode": "^1.64.0",
+		"@vscode/test-electron": "^2.1.2",
+		"eslint": "^8.9.0",
+		"glob": "^7.2.0",
+		"mocha": "^9.2.1",
+		"typescript": "^4.5.5"
+	}
+}
