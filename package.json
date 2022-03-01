@@ -8,7 +8,7 @@
 		"url": "https://github.com/ANILSRGT/mvvm-folder-generate"
 	},
 	"homepage": "https://github.com/ANILSRGT/mvvm-folder-generate/blob/main/README.md",
-	"publisher": "Anıl Sorgit",
+	"publisher": "ANILSRGT",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.64.0"
