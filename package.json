@@ -1,7 +1,13 @@
 {
 	"name": "mvvm-folder-generate",
 	"displayName": "MVVM Folder Generate",
-	"description": "images/icon.png",
+	"description": "MVVM Folder Generate",
+	"icon": "images/icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ANILSRGT/mvvm-folder-generate"
+	},
+	"homepage": "https://github.com/ANILSRGT/mvvm-folder-generate/blob/main/README.md",
 	"publisher": "Anıl Sorgit",
 	"version": "0.0.1",
 	"engines": {
